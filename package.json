@@ -1,0 +1,15 @@
+{
+  "name": "templatepractice28",
+  "version": "1.0.0",
+  "description": "Practice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.8.2",
+    "jquery": "^3.4.1"
+  }
+}
