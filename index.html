@@ -30,21 +30,22 @@
             <div class="logo">
                 <img src="img/logo.png" alt="logo">
             </div>
-            <div class="links">
-                <a href="#" class="active">home</a>
-                <a href="#">about</a>
-                <a href="#">pages <i class="fas fa-chevron-down"></i></a>
-                <a href="#">our product</a>
-                <a href="#">farming practice</a>
-                <a href="#">news</a>
-                <a href="#">contact</a>
-                <a href="#"><i class="fas fa-search"></i></a>
-                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+            <div class="links col">
+                <a href="#home" class="active">home</a>
+                <a href="#about">about</a>
+                <a href="#testimonial">pages <i class="fas fa-chevron-down"></i></a>
+                <a href="#products">our product</a>
+                <a href="#practice">farming practice</a>
+                <a href="#news">news</a>
+                <a href="#contact">contact</a>
+                <a href="#" class="hd"><i class="fas fa-search"></i></a>
+                <a href="#" class="hd"><i class="fas fa-shopping-cart"></i></a>
             </div>
+            <i class="fas fa-bars fa-lg" id="menu"></i>
         </div>
     </nav>
 
-    <section class="main">
+    <section class="main" id="home">
         <div class="overlay"></div>
         <div class="container">
             <h1>the hearth of the farm is the true<br> center of our universe</h1>
@@ -96,7 +97,7 @@
         </div>
     </section>
 
-    <section class="about"> <!--This is a section-->
+    <section class="about" id="about">
         <div class="container">
             <div class="info">
                 <span>ABOUT US</span>
@@ -171,7 +172,7 @@
         </div>
     </section>
 
-    <section class="products">
+    <section class="products" id="products">
         <span>FEATURED PRODUCTS</span>
         <h1><span>our products</span> are highest quality</h1>
         <img src="img/decor2.png" alt="decor2">
@@ -265,12 +266,15 @@
     <section class="paralax">
         <div class="overlay"></div>
         <div class="container">
-            <span>WHAT WE DO</span>
-            <h1>Our Produce Is Mainstay For Us</h1>
-            <img src="img/decor2.png" alt="decor">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at diam convallis ligula cursus bibendum
-                sed at enim. Class aptent taciti sociosqu ad litora torquent conubia nostra, per inceptos himenaeos.
-            </p>
+            <div class="wrap">
+                <span>WHAT WE DO</span>
+                <h1>Our Produce Is Mainstay For Us</h1>
+                <img src="img/decor2.png" alt="decor">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at diam convallis ligula cursus
+                    bibendum
+                    sed at enim. Class aptent taciti sociosqu ad litora torquent conubia nostra, per inceptos himenaeos.
+                </p>
+            </div>
             <div>
                 <input type="email" name="email" placeholder="Enter your email">
                 <a href="#" class="btn">subscribe</a>
@@ -278,10 +282,7 @@
         </div>
     </section>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="main.js"></script>
-
-    <section class="farming">
+    <section class="farming" id="practice">
         <span>MAKE THE GREEN WORLD</span>
         <h1><span>Farming Practices</span> To Preserve Land & Water</h1>
         <img src="img/decor2.png" alt="decor">
@@ -385,7 +386,7 @@
         </div>
     </section>
 
-    <section class="testimonial">
+    <section class="testimonial" id="testimonial">
         <div class="overlay"></div>
         <div class="container">
             <div class="info">
@@ -411,7 +412,7 @@
         </div>
     </section>
 
-    <section class="contact">
+    <section class="contact" id="contact">
         <div class="container">
             <div class="left">
                 <span>CONTACT NOW</span>
@@ -438,28 +439,13 @@
                                 src="https://maps.google.com/maps?q=E%20New%20York%20St&t=&z=13&ie=UTF8&iwloc=&output=embed"
                                 frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
                                 href="https://www.emojilib.com"></a></div>
-                        <style>
-                            .mapouter {
-                                position: relative;
-                                text-align: right;
-                                height: 500px;
-                                width: 600px;
-                            }
-
-                            .gmap_canvas {
-                                overflow: hidden;
-                                background: none !important;
-                                height: 500px;
-                                width: 600px;
-                            }
-                        </style>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="news">
+    <section class="news" id="news">
         <div class="container">
             <div class="box">
                 <div class="overlay"></div>
@@ -593,6 +579,8 @@
         </div>
     </footer>
 
-</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="main.js"></script>
 
+</body>
 </html>
